@@ -1,0 +1,190 @@
+/* RESETANDO A PÁGINA */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+/* DEFININDO VARIÁVEIS */
+:root {
+  --color-light: #EBE6E4;
+  --color-dark: #292727;
+  --color-gray: #494543;
+  --color-black: #1e1917;
+}
+
+header {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PLACAR */
+
+.placar {
+  display: flex;
+}
+
+.RoboPlacar {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: 10vh;
+}
+
+.placarRobo1 {
+  display: flex;
+}
+
+.placarRobo2 {
+  display: flex;
+}
+
+.pontos {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin: 12vh 0.5rem 0 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+}
+
+p {
+  background-color: var(--color-black);
+  color: var(--color-light);
+}
+
+/* IMAGEM DE FUNDO */
+body {
+  background-image: url(../assets/fundo.gif);
+}
+
+/* ARENA */
+.container {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arena {
+  width: 35%;
+  height: 75vh;
+  border-radius: 80%;
+  background-color: var(--color-light);
+  box-shadow: 6px 6px 6px 6px var(--color-gray);
+  position: relative;
+}
+
+/* AJUSTANDO ROBÔS NA ARENA */
+.robos{
+  width: 35%;
+  height: 75vh;
+  border-radius: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.robo {
+  width: 50px;
+  height: 50px;
+  border-radius: 65%;
+  box-shadow: 3px 5px 5px var(--color-gray);
+  position: absolute;
+}
+.robo2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 65%;
+  margin: 0 0 0 10rem;
+  box-shadow: 3px 5px 5px var(--color-gray);
+  position: absolute;
+}
+
+/* MODAL INICIO */
+.modal-inicio {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../assets/fundo.gif);
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  opacity: 1;
+  visibility: visible;
+
+  z-index: 1;
+}
+
+.modal-inicio.active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.logo {
+  margin: 3rem 0 3rem 0;
+}
+
+.botao {
+  width: 11rem;
+  border: 3px solid var(--color-light);
+  padding: 5px;
+  background-color: var(--color-light);
+  font-weight: bold;
+  border-radius: 0.8rem;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dark);
+}
+
+/* MODAL FIM */
+
+.modal-fim {
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../assets/fundo.gif);
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 1;
+}
+
+.modal-fim.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+h1{
+  color: var(--color-light);
+}
+
+.robovencedor {
+  height: 50vh;
+  border-radius: 50%;
+  margin: 2rem 0 2.5rem 0;
+  box-shadow: 6px 6px 6px 6px var(--color-gray);
+}
+
