@@ -72,9 +72,9 @@ body {
 }
 
 .arena {
-  width: 35%;
-  height: 75vh;
-  border-radius: 80%;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
   background-color: var(--color-light);
   box-shadow: 6px 6px 6px 6px var(--color-gray);
   position: relative;
